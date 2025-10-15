@@ -5,23 +5,59 @@
     --card-bg: #1A1F3A;
     --text-primary: #FFFFFF;
     --text-secondary: #B0B0B0;
-    --gradient-button: linear-gradient(-45deg, #00FFFF, #0099FF);
+    --text-third: #888888;
+    --gradient-button: linear-gradient(-45deg, #00FFFF 0%, #0099FF 100%);
     --gradient-line: linear-gradient(left, #00FFFF, #FF00FF);
+    --gradient-herotitle: linear-gradient(-35deg, #FFFFFF 0%, #00FFFF 100%);
+    --gradient-cardItem: linear-gradient(-45deg, #1A1F3A 0%, #0F1428 100%);
+    --gradient-community: linear-gradient(0deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0) 100%);
+    --gradient-footer: linear-gradient(0deg, rgba(10, 14, 39, 0.8) 0%, rgba(5, 8, 18, 1) 100%);
     --border-1: rgba(0, 255, 255, 0.3);
 
 }
-
+*{
+    font-family:"inter";
+    font-weight: normal;
+    box-sizing: border-box;
+}
 body {
-    font-family: "inter";
+
     background-color: var(--dark-bg);
     color: var(--text-primary);
+    margin: 0;
+    
 
 }
+.logo{
+    font-weight: bolder;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+.logogg{
+    font-weight: bolder;
+    font-size: 22px;
+    color: var(--primary-color);
+    text-decoration: none;
+
+}
+
+.section-title{
+    font-weight:bolder;
+    font-size: 40px;
+    text-align: center;
+}
+.small-section-title{
+    font-weight: bolder;
+    font-size: 28px;
+    text-align: center;
+}
+
 header {
-    position: fixed;
+    position: sticky;
     width: 100%;
     height: 5rem;
-    background: #FF00FF;
+    background: var(--dark-bg);
     
 }
 nav {
@@ -37,7 +73,7 @@ nav {
     list-style: none;
     gap: 2rem;
 }
-.B-gen {
+.B-Conexion {
     margin: -0.5rem;
     padding: 0.5rem 1rem;
     background: var(--gradient-button);
@@ -46,11 +82,28 @@ nav {
     color: #0A0E27;
     font-weight: bold;
     cursor: pointer;
+    filter: drop-shadow(2px 2px 10px rgba(0, 255, 255, 0.4));
+
 }
-.B-gen2{
+/*hero section*/
+
+.B-hero1{
     margin: -0.5rem;
-    padding: 0.5rem 1rem;
-    background:var(--dark-bg);
+    padding: 1.15rem 1rem;
+    background: var(--gradient-button);
+    border: none;
+    border-radius: 8px;
+    color: #0A0E27;
+    font-weight: bold;
+    cursor: pointer;    
+    filter: drop-shadow(2px 2px 10px rgba(0, 255, 255, 0.4));
+
+}
+
+.B-hero2{
+    margin: 1.5rem;
+    padding: 1rem 1rem;
+    background: #1A1F3A;
     border:#00FFFF;
     border-style: solid;
     border-width: medium;
@@ -58,4 +111,282 @@ nav {
     color:#00FFFF;
     font-weight: bold;
     cursor: pointer;   
+    
+}
+#accueil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--card-bg);
+}
+
+#hero-content{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.filter-section{
+    background: var(--card-bg);
+    border-radius: 16px;
+    border: 2px solid var(--border-1);
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-bottom: 2rem;
+
+}
+.filter-input{
+    
+display: flex;
+
+}
+ input{
+
+    background-color:#0A0E27 ;
+    border-radius: 8px;
+    width: 20%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--border-1);
+ }
+ label{
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 10px;
+ }
+ #B-filter{
+    margin: 0.5rem;
+    padding: 0.5rem 4rem;
+    background: var(--gradient-button);
+    border: none;
+    border-radius: 8px;
+    color: #0A0E27;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;   
+    filter: drop-shadow(2px 2px 10px rgba(0, 255, 255, 0.4));
+ 
+ }
+ .small-header{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 0.8rem;
+ }
+.paragraph{
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-align: center;
+    height: 87px;
+    width: 283px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 28px;
+}
+ .card-item{
+    display: flex;
+    flex-direction: column;
+    background: var(--gradient-cardItem);
+    border-radius: 16px;
+    border: 2px solid var(--border-1);
+    margin: 1rem;
+    align-items: center;
+
+ }
+.item-align{
+    display: flex;
+    justify-content: center;
+}
+ .icon-cercle{
+    background: var(--dark-bg);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fa-regular.fa-user{
+    font-size: 50px;
+    color: var(--primary-color);
+}
+.fa-solid.fa-user-plus{
+    font-size: 40px;
+    color: var(--primary-color);
+}
+h4{
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 10px;
+}
+.game-title-LOL{
+    background: rgba(0, 150, 255, 0.2);
+    font-weight: bold;
+    font-size: 14px;
+    color: #0096FF;
+    border: 2px solid rgba(0, 150, 255, 0.4);
+    border-radius: 20px;
+    padding: 5px;
+}
+.game-title-CS2{
+    background: rgba(255, 165, 0, 0.2);
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFA500;
+    border: 2px solid rgba(255, 165, 0, 0.4);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.game-title-valorant{
+    background: rgba(255, 70, 85, 0.2);
+    font-weight: bold;
+    font-size: 14px;
+    color: #FF4655;
+    border: 2px solid rgba(255, 70, 85, 0.4);
+    border-radius: 20px;
+    padding: 5px;
+}
+.player-info-class{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 24px;
+}
+h6{
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+.player-button{
+    margin: 0.5rem;
+    padding: 0.5rem 4rem;
+    background: var(--gradient-button);
+    border: none;
+    border-radius: 8px;
+    color: #0A0E27;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;    
+    filter: drop-shadow(2px 2px 10px rgba(0, 255, 255, 0.4));
+
+}
+.joueur-disponibles{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.player-paragraph{
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-align: center;
+    height: 60px;
+    width: 283px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 28px;
+}
+.PlayerPFP{
+    background: var(--dark-bg);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    filter: drop-shadow(2px 2px 10px rgba(0, 255, 255, 0.4));
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.paragraphC{
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-align: center;
+    height: 29px;
+    width: 320px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 28px;    
+}
+.number{
+    font-weight: bolder;
+    font-size: 44px;
+
+}
+
+.underPN{
+    font-size: 14px;
+    color: var(--text-third);
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 28px;
+    margin-left: 1.5rem;
+}
+.player-name{
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--primary-color);
+    text-align: left;
+    margin-bottom: auto;
+    margin-top: 2px;
+    margin-left: 1.5rem;
+}
+ .card-item2{
+    display: flex;
+    flex-direction: column;
+    background: var(--gradient-cardItem);
+    border-radius: 16px;
+    border: 2px solid var(--border-1);
+    margin: 1rem;
+ }
+ .paragraphC2{
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-align: center;
+    height: 116px;
+    width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 28px;    
+}
+.empty{
+    padding: 96px 40px 96px 40px;
+    background: var(--gradient-community);
+}
+
+footer{
+    position: static;
+    background: var(--gradient-footer);
+    padding: 64px 40px 32px 40px;
+}
+.paragraphF{
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 28px;    
+
+}
+.paragraphFF{
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 28px;    
+
+}
+.contact-logo{
+    background: rgba(0, 255, 255, 0.1);
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    padding: 5px;
+    border-radius: 8px;
 }
