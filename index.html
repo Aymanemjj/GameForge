@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameForge Studio</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="siteicon.webp">
+    
     <script src="https://kit.fontawesome.com/e53a9172bb.js" crossorigin="anonymous"></script>
+    
     <style>
+
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
+
 </head>
 <body>
     <!--Header-->
@@ -20,8 +26,7 @@
                 <li><a href="index.html" style="text-decoration: none; color: white;">Accueil</a></li>
                 <li>Comment ca marche</li>
                 <li><a href="Player.html" style="text-decoration: none; color: white;">Joueurs</a></li>
-                <li><a href="team.html" style="text-decoration: none; color: white;">Équipes</a></li>
-                <li>Communauté</li>
+                <li><a href="team.html" style="text-decoration: none; color: white;">Communauté</a></li>
                 <li><button class="B-Conexion">Connexion</button></li>
                 
             </ul>
@@ -40,19 +45,29 @@ niveau sur Valorant, LoL, CS2 et plus encore.</p>
         </div>
     </section>
     <!--Filter section-->
-    <div style="padding-left:50px; padding-right:50px;">    
+    <div style="display: flex; justify-content: center;">    
         <section class="filter-section">
             <h2 class="small-section-title">Recherche ton équipe idéale</h2>
                 <form>
                         <div class="filter-input">
-
-                            <label for="Fgame">Jeu</label><br>
-                            <input type="text" id="Fgame" name="Fgame"><br>
-                            <label for="Fniveau">Niveau</label><br>
-                            <input type="text" id="Fniveau" name="Fniveau"><br>
-                            <label for="Frole">Role</label><br>
-                            <input type="text" id="Frole" name="Frole"><br>
-                            <button id="B-filter">Recherche</button>
+                            <div>    
+                                <label for="Fgame">Jeu</label><br>
+                                <select name="Agame" id="Agame" class="input" style="width: 16rem; margin: 10px;" >
+                                <option value="CS2">CS2</option>
+                                <option value="Valorant">Valorant</option>
+                                <option value="League of Legends">League of Legends</option>
+                                <option value="Overwatch 2">Overwatch 2</option>
+                            </select><br>
+                            </div>
+                            <div>
+                                <label for="Fniveau">Niveau</label><br>
+                                <input type="text" id="Fniveau" name="Fniveau">
+                            </div>
+                            <div>
+                                <label for="Frole">Role</label><br>
+                                <input type="text" id="Frole" name="Frole">
+                            </div>
+                                <button id="B-filter">Recherche</button>
                         </div>
                 </form>
         </section>

@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameForge Studio</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="siteicon.webp">
+    
     <script src="https://kit.fontawesome.com/e53a9172bb.js" crossorigin="anonymous"></script>
+    
     <style>
+
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
+
 </head>
 <body>
     <!--Header-->
@@ -19,20 +25,61 @@
             <ul class="nav-links">
                 <li><a href="index.html" style="text-decoration: none; color: white;">Accueil</a></li>
                 <li>Comment ca marche</li>
-                <li>Joueurs</li>
-                <li>Équipes</li>
-                <li>Communauté</li>
+                <li><a href="Player.html" style="text-decoration: none; color: white;">Joueurs</a></li>
+                <li><a href="team.html" style="text-decoration: none; color: white;">Communauté</a></li>
                 <li><button class="B-Conexion">Connexion</button></li>
                 
             </ul>
         </nav>    
     </header>
+    <!--Spasing-->
+    <div style="padding: 2rem;"></div>
     <!--Team-formu section-->
-    <section>
-        <div>
-            
+    <section style="display: flex; justify-content: center;">
+        <div id="Aforum">
+            <div class="Aforum">
+                <h2 class="small-section-title">Annoncé ton équipe</h2>
+                <form>
+                    <div style="display: flex;flex-direction: column;">
+                        <div>   
+                            <label for="Agame" class="label2">Game</label><br>
+                            <select name="Agame" id="Agame" class="input2">
+                                <option value="CS2">CS2</option>
+                                <option value="Valorant">Valorant</option>
+                                <option value="League of Legends">League of Legends</option>
+                                <option value="Overwatch 2">Overwatch 2</option>
+                            </select><br>
+                            <label for="Aname" class="label2">Nom d'équipe</label><br>
+                            <input class="input2" type="text" id="Aname" name="Aname"><br>
+                        </div>
+                        <div id="Aforumside">    
+                            <div>
+                                <label for="Arole" class="label2">Role</label><br>
+                                <select name="Arole" id="Arole" class="input3">
+                                    <option value="option">option 1</option>
+                                    <option value="option">option 2</option>
+                                    <option value="option">option 3</option>
+                                    <option value="option">option 4</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="Arank" class="label2">Niveau</label><br>
+                                <select name="Arank" id="Arank" class="input3">
+                                    <option value="option">option 1</option>
+                                    <option value="option">option 2</option>
+                                    <option value="option">option 3</option>
+                                    <option value="option">option 4</option>
+                                </select><br>
+                            </div>
+                        </div>
+                            <button class="forum-button">Annoncé</button>                     
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
+    <!--Spasing-->
+    <div style="padding: 2rem;"></div>
     <!--Footer-->
     <footer>
         <div style="padding-left: 20px; padding-right: 20px;">
