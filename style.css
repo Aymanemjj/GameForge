@@ -480,3 +480,23 @@ select{
     filter: drop-shadow(2px 2px 10px rgba(0, 255, 255, 0.4));
 
 }
+.more-button{
+    width: 16rem;
+    margin: 0.5rem;
+    padding: 0.5rem 4rem;
+    background: var(--gradient-button);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;    
+    filter: drop-shadow(2px 2px 10px rgba(0, 255, 255, 0.4));
+}
+#more-buttonFlex{
+    display: flex;
+    justify-content: center;
+}
+#more-button{
+    color: #0A0E27;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
