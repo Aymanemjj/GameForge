@@ -7,7 +7,6 @@
     --text-secondary: #B0B0B0;
     --text-third: #888888;
     --gradient-button: linear-gradient(-45deg, #00FFFF 0%, #0099FF 100%);
-    --gradient-line: linear-gradient(left, #00FFFF, #FF00FF);
     --gradient-herotitle: linear-gradient(-35deg, #FFFFFF 0%, #00FFFF 100%);
     --gradient-cardItem: linear-gradient(-45deg, #1A1F3A 0%, #0F1428 100%);
     --gradient-community: linear-gradient(0deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0) 100%);
@@ -499,4 +498,10 @@ select{
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
+    padding: 0.5rem 4rem;
+    background: var(--gradient-button);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;    
+    filter: drop-shadow(2px 2px 10px rgba(0, 255, 255, 0.4));
 }
